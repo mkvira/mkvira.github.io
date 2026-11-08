@@ -4,31 +4,21 @@ title: Home
 ---
 
 <main>
-  <section class="hero page-width" id="about">
+  <section class="hero page-width">
     <div class="hero-copy">
       <p class="eyebrow">PERSONAL BLOG &amp; PORTFOLIO</p>
       <h1>Notes on technology, ideas, and the things I’m learning.</h1>
       <p class="intro">I’m Mahmoud, and this is my personal corner of the web. I write about projects, useful lessons, and everyday discoveries.</p>
-      <a class="text-link" href="#articles">Read the latest <span aria-hidden="true">→</span></a>
+      <a class="text-link" href="{{ '/blogs/' | relative_url }}">Read the latest <span aria-hidden="true">→</span></a>
     </div>
-    <div class="portrait-placeholder" role="img" aria-label="Illustrated initials MK">
-      <span>MK</span>
-      <small>Mahmoud Kazemi · Personal notes</small>
+    <div class="hero-photo">
+      <img src="{{ '/assets/images/mahmoud-kazemi.png' | relative_url }}" alt="Portrait of Mahmoud Kazemi">
     </div>
   </section>
 
   <section class="content-grid page-width" id="articles">
-    <div class="featured-card">
-      <div class="feature-art" aria-hidden="true"><span class="sun"></span><span class="hill hill-one"></span><span class="hill hill-two"></span><span class="laptop"><i></i><i></i><i></i></span><span class="mug"></span></div>
-      <div class="featured-copy">
-        <p class="eyebrow">THE JOURNAL</p>
-        <h2>A small place for big ideas.</h2>
-        <p>Writing, learning, and building for the web—one note at a time.</p>
-      </div>
-    </div>
-
     <div class="recent-list">
-      <h2>Recent articles</h2>
+      <h2>Recent Posts</h2>
       {% assign recent_posts = site.posts | slice: 0, 4 %}
       {% if recent_posts.size > 0 %}
         {% for post in recent_posts %}
@@ -44,10 +34,5 @@ title: Home
         <p class="empty-note">Your first article will show up here. Add a Markdown file in <code>_posts/</code> to get started.</p>
       {% endif %}
     </div>
-  </section>
-
-  <section class="about-strip page-width" id="projects">
-    <p class="eyebrow">A NOTE ON THIS SITE</p>
-    <p>I’m Mahmoud Kazemi. I enjoy exploring technology and making things for the web. This site is where I collect what I learn and share the projects I’m working on.</p>
   </section>
 </main>

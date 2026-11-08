@@ -4,7 +4,14 @@ An English-language personal blog and portfolio built with Jekyll for GitHub Pag
 
 ## Local preview
 
-Install Ruby and Bundler, then run `bundle exec jekyll serve` from this folder. The site will be available at `http://localhost:4000`.
+Install Ruby 3.0 or newer and Bundler. From this folder, install the project dependencies once, then start the local server:
+
+```sh
+bundle install
+bundle exec jekyll serve
+```
+
+The site will be available at `http://localhost:4000`.
 
 ## Publish on GitHub Pages
 
