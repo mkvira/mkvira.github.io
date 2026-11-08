@@ -1,0 +1,15 @@
+title: Mahmoud Kazemi
+description: Notes on technology, products, and building for the web.
+url: "https://mkvira.github.io"
+baseurl: ""
+lang: en
+timezone: Asia/Tehran
+markdown: kramdown
+permalink: /articles/:title/
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+collections:
+  projects:
+    output: true

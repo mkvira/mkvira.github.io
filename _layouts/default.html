@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f4ed">
+    {% seo %}
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+    {% feed_meta %}
+  </head>
+  <body>
+    <header class="site-header page-width">
+      <a class="wordmark" href="{{ '/' | relative_url }}">MAHMOUD KAZEMI</a>
+      <nav aria-label="Main navigation">
+        <a href="{{ '/' | relative_url }}#articles">Articles</a>
+        <a href="{{ '/' | relative_url }}#about">About</a>
+        <a href="{{ '/' | relative_url }}#projects">Projects</a>
+        <a class="contact-link" href="{{ '/' | relative_url }}#about">About Mahmoud</a>
+      </nav>
+    </header>
+    {{ content }}
+    <footer class="site-footer page-width">
+      <a class="wordmark" href="{{ '/' | relative_url }}">MAHMOUD KAZEMI</a>
+      <p>A personal blog about technology, products, and building for the web.</p>
+      <span>© {{ site.time | date: '%Y' }} Mahmoud Kazemi</span>
+    </footer>
+  </body>
+</html>
